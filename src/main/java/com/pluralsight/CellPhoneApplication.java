@@ -12,7 +12,6 @@ public class CellPhoneApplication {
         System.out.println("What is the serial number? ");
         int serial = Integer.parseInt(scanner.nextLine());
         phone.setSerialNumber(serial);
-        scanner.nextLine();
 
         System.out.println("What model is the phone? ");
         String model = scanner.nextLine();
@@ -31,7 +30,7 @@ public class CellPhoneApplication {
         phone.setOwner(owner);
 
         //Display output and using getters to get the data from setting for each variable in the object phone
-        System.out.printf("Phone Number: %s\nSerial Number: %s\nCarrier: %s\nModel: %s\nOwner: %s\n",
+        System.out.printf("\nPhone Number: %s\nSerial Number: %s\nCarrier: %s\nModel: %s\nOwner: %s\n",
                 phone.getPhoneNumber(),
                 phone.getSerialNumber(),
                 phone.getCarrier(),

@@ -2,11 +2,11 @@ package com.pluralsight;
 
 public class CellPhone{
      //Field variables
-     int serialNumber;
-     String model;
-     String carrier;
-     String phoneNumber;
-     String owner;
+     private int serialNumber;
+     private String model;
+     private String carrier;
+     private String phoneNumber;
+     private String owner;
 
      //Made a parameterless constructor to establish what variables will be in the object instantiated
      public CellPhone() {
