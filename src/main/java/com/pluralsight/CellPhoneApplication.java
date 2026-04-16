@@ -29,12 +29,6 @@ public class CellPhoneApplication {
         String owner = scanner.nextLine();
         phone.setOwner(owner);
 
-        System.out.printf(phone.getPhoneNumber());
-        System.out.printf(phone.getModel());
-        System.out.printf(phone.getCarrier());
-        System.out.printf(phone.getPhoneNumber());
-        System.out.printf(phone.getOwner());
-
-        System.out.println(phone.phoneNumber + phone.serialNumber + phone.carrier + phone.model + phone.owner);
+        System.out.printf("Phone Number: %s\nSerial Number: %s\nCarrier: %s\nModel: %s\nOwner: %s\n", phone.getPhoneNumber(), phone.getSerialNumber(), phone.getCarrier(), phone.getModel(), phone.getOwner());
     }
 }
