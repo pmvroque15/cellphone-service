@@ -1,39 +1,46 @@
 package com.pluralsight;
 
-public class CellPhone {
-    String serialNumber = "0";
-    String model = "";
-    String phoneNumber = "";
-    String owner = "";
+public class CellPhone{
+     int serialNumber;
+     String model;
+     String phoneNumber;
+     String owner;
+
+    public Cellphone() {
+        serialNumber = 0;
+        model = "";
+        phoneNumber = "";
+        owner = "";
+    }
     static void main(String[] args) {
     }
 
-    public String getSerialNumber() {
+    public int getSerialNumber() {
         return serialNumber;
     }
-    void setSerialNumber(String serialNumber) {
+    public void setSerialNumber(int serialNumber) {
         this.serialNumber = serialNumber;
     }
 
     public String getModel() {
         return model;
     }
-    void setModel(String model) {
+    public void setModel(String model) {
         this.model = model;
     }
 
     public String getPhoneNumber() {
         return phoneNumber;
     }
-    void setPhoneNumber(String phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
     public String getOwner() {
-        return serialNumber;
+        return owner;
     }
 
-    void setOwner(String owner) {
+    public void setOwner(String owner) {
         this.owner = owner;
     }
 }
