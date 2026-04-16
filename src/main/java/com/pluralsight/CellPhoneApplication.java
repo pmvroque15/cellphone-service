@@ -4,12 +4,13 @@ import java.util.Scanner;
 
 public class CellPhoneApplication {
 
-    static void main() {
+    static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         CellPhone phone = new CellPhone();
 
+        //Making prompts and use setters from Cellphone class to set data on each variable in object phone
         System.out.println("What is the serial number? ");
-        int serial = scanner.nextInt();
+        int serial = Integer.parseInt(scanner.nextLine());
         phone.setSerialNumber(serial);
         scanner.nextLine();
 
@@ -18,8 +19,8 @@ public class CellPhoneApplication {
         phone.setModel(model);
 
         System.out.println("Who is the carrier? ");
-        String phoneCarrier = scanner.nextLine();
-        phone.setCarrier(phoneCarrier);
+        String carrier = scanner.nextLine();
+        phone.setCarrier(carrier);
 
         System.out.println("What is the phone number? ");
         String phoneNumber = scanner.nextLine();
@@ -29,6 +30,13 @@ public class CellPhoneApplication {
         String owner = scanner.nextLine();
         phone.setOwner(owner);
 
-        System.out.printf("Phone Number: %s\nSerial Number: %s\nCarrier: %s\nModel: %s\nOwner: %s\n", phone.getPhoneNumber(), phone.getSerialNumber(), phone.getCarrier(), phone.getModel(), phone.getOwner());
+        //Display output and using getters to get the data from setting for each variable in the object phone
+        System.out.printf("Phone Number: %s\nSerial Number: %s\nCarrier: %s\nModel: %s\nOwner: %s\n",
+                phone.getPhoneNumber(),
+                phone.getSerialNumber(),
+                phone.getCarrier(),
+                phone.getModel(),
+                phone.getOwner());
     }
+
 }
