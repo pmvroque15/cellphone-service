@@ -16,6 +16,11 @@ public class CellPhone{
         phoneNumber = "";
         owner = "";
     }
+    public CellPhone(String phoneNumber, String owner) {
+        this.phoneNumber = phoneNumber;
+        this.owner = owner;
+    }
+
     //Setters and getters for Serial number
     public int getSerialNumber() {
         return serialNumber;
@@ -57,6 +62,11 @@ public class CellPhone{
 
     public void setOwner(String owner) {
         this.owner = owner;
+    }
+
+    //dial(String phoneNumber) method
+    public void dial(String phoneNumber) {
+        System.out.printf("%s's phone is calling %s", owner, phoneNumber);
     }
 }
 
